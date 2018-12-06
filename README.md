@@ -8,7 +8,7 @@
 ## Usage
 * Build
 ```
-$ cd /path/to/docker-rails5
+$ cd /path/to/rails-develop
 $ docker-compose build
 ```
 
@@ -27,4 +27,9 @@ $ docker-compose up -d
 * Run tests(For Mac)
 ```
 $ bundle exec rspec
+```
+
+* Run guard
+```
+$ docker-compose run rails guard --force-polling
 ```
