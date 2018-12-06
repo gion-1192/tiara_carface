@@ -1,4 +1,4 @@
-# docker-rails5
+# rails開発環境(rspec、guard設定済み)
 
 * Ruby on Rails 5 Sample Application on Docker
 
