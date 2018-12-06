@@ -39,6 +39,12 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # RSpec tests for your servers configured by CFEngine, Puppet, Chef, Ansible, Itamae or anything else even by hand
   gem 'serverspec'
+	gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+	gem 'guard'
+	gem 'guard-rspec'
+	gem 'spring-commands-rspec'
 end
 
 group :development do
