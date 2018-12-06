@@ -1,4 +1,4 @@
-# docker-rails5
+# rails開発環境(rspec、guard設定済み)
 
 * Ruby on Rails 5 Sample Application on Docker
 
@@ -8,7 +8,7 @@
 ## Usage
 * Build
 ```
-$ cd /path/to/docker-rails5
+$ cd /path/to/rails-develop
 $ docker-compose build
 ```
 
@@ -24,7 +24,7 @@ $ docker-compose up -d
 
 * http://127.0.0.1
 
-* Run tests(For Mac)
+* Run guard
 ```
-$ bundle exec rspec
+$ docker-compose run rails guard --force-polling
 ```
