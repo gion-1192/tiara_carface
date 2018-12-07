@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
+
+gem 'slim-rails'
 gem 'unicorn'
 
 # Use Capistrano for deployment

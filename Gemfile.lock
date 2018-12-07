@@ -194,6 +194,13 @@ GEM
       specinfra (~> 2.53)
     sfl (2.2)
     shellany (0.0.1)
+    slim (3.0.9)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 1.3.3, < 2.1)
+    slim-rails (3.2.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (>= 3.0, < 5.0)
     specinfra (2.60.2)
       net-scp
       net-ssh (>= 2.7, < 4.0)
@@ -212,6 +219,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    temple (0.8.0)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
@@ -254,6 +262,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   serverspec
+  slim-rails
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
