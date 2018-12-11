@@ -1,0 +1,17 @@
+= form_for @employee do |f|
+  - if @employee.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@employee.errors.count, "error")} prohibited this employee from being saved:"
+      ul
+        - @employee.errors.full_messages.each do |message|
+          li = message
+  .field
+    = f.label :name, '名前'
+    = f.text_field :name
+
+    = f.label :tiara_id, '従業員ID'
+    = f.text_field :tiara_id
+
+    = f.label :car_model, '車種'
+    = f.select :car_model, [['普通車', 15], ['ハイブリッド', 20], ['軽自動車', 1]]
+  .actions = f.submit '従業員登録'
